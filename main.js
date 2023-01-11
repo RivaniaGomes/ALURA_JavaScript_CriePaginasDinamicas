@@ -1,39 +1,33 @@
-function TocaSomPom() {
-  document.querySelector("#som_tecla_pom").play();
-}
-
-function tocaSomClap() {
-  document.querySelector("#som_tecla_clap").play();
-}
-
-function tocaSomTim() {
-  document.querySelector("#som_tecla_tim").play();
-}
-
-function tocaSomPuff() {
-  document.querySelector("#som_tecla_puff").play();
-}
-
-function tocaSomSplash() {
-  document.querySelector("#som_tecla_splash").play();
-}
-
-function tocaSomToim() {
-  document.querySelector("#som_tecla_toim").play();
-}
-
-function tocaSomPsh() {
-  document.querySelector("#som_tecla_psh").play();
-}
-
-function tocaSomTic() {
-  document.querySelector("#som_tecla_tic").play();
-}
-
-function tocaSomTom() {
-  document.querySelector("#som_tecla_tom").play();
+function tocaSom(idElementoAudio) {
+  document.querySelector(idElementoAudio).play();
 }
 
 const listaDeTeclas = document.querySelectorAll(".tecla");
 
-listaDeTeclas[0].onclick = TocaSomPom;
+//usando o While como contador
+
+// let contador = 0;
+
+// while (contador < listaDeTeclas.length) {
+//   const tecla = listaDeTeclas[contador];
+//   const instrumento = tecla.classList[1];
+//   const idAudio = `#som_${instrumento}`;
+
+//   tecla.onclick = function () {
+//     tocaSom(idAudio);
+//   };
+//   contador++;
+// }
+
+//usando o For como contador
+
+for (let contador = 0; contador < listaDeTeclas.length; contador++) {
+  const tecla = listaDeTeclas[contador];
+  const instrumento = tecla.classList[1];
+  const idAudio = `#som_${instrumento}`;
+
+  tecla.onclick = function () {
+    tocaSom(idAudio);
+  };
+  
+}
