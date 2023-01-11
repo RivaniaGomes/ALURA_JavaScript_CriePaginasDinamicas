@@ -1,5 +1,5 @@
-function ClicaTecla() {
-  
-}
+function ClicaTecla() {}
 document.querySelector("input[type=tel]");
-document.querySelector("input[type=button]");
+
+const listaDeTeclas = document.querySelectorAll('input[type=button]');
+console.log(listaDeTeclas);
