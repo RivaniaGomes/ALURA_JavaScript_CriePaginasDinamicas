@@ -25,6 +25,11 @@
 
 ## 🖥️ Cursos Realizados
 ##### 📌 JavaScript para Web: Crie páginas dinâmicas
+<br>
+
+## 🎬 Conteúdo Extra
+##### 🔖 Data Attributes do HTML5 - ALURA+
+<br>
 
 ## 📋 Resultado Obtido   
    
